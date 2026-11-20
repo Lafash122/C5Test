@@ -1,11 +1,10 @@
-name: QA CI
+name: QA Cancelled
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  wait:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "OK"
+      - run: sleep 1200
