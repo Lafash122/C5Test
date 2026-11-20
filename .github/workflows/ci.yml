@@ -1,0 +1,13 @@
+name: QA CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Successful step
+        run: echo "Build successful"
