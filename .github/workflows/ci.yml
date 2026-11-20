@@ -1,13 +1,11 @@
-name: QA Failure
+name: QA CI
 
 on:
-
-
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
-  failure:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Fail
-        run: exit 1
+      - run: echo "OK"
