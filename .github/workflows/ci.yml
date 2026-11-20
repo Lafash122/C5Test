@@ -1,11 +1,10 @@
-name: QA Failure
+name: QA Cancelled
 
 on:
   workflow_dispatch:
 
 jobs:
-  failure:
+  wait:
     runs-on: ubuntu-latest
     steps:
-      - name: Fail
-        run: exit 1
+      - run: sleep 1200
